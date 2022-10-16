@@ -5,8 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love-it || leave-it</title>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+         background-color: lightgray;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: whitesmoke;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 20px;
+        }
+        
+        li a:hover {
+          background-color: teal;
+        }
+
+        h2{
+            font-size: 30px;
+          color: teal;
+        }
+        </style>
 </head>
 <body>
+    <ul>
+        <li><a href='/Fav/foods'>Favorite Foods</a></li>
+        <li><a href='/Fav/animals'>Favorite Animals</a></li>
+        <li><a href='/Worst/movies'>Worst Movies</a></li>
+        <li><a href='/Worst/products'>Worst Products</a></li>
+      </ul>
+
     <header style="border-bottom:5px black solid"><h1>Love-it || leave-it</h1></header>
     <%- body %> 
 </body>
